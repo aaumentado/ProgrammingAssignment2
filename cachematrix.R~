@@ -4,20 +4,19 @@
 ## Date 8/23/2014
 ## Student: Albert Aumentado
 ## This set of functions will take a matrix x and create
-## an object with a set of functions for caching and retrieving
-## the matrices involved.
+## an object with a set functions for caching and retrieving
+## matrices the matrices involved.
 ##
 ## example:
 ## > A <- matrix(rnorm(1E6), nrow = 1000, ncol = 1000) # generate a matrix
 ## > cacheMatrix_A <- makeCacheMatrix(A) # creates the caching object cacheMatrix_A
 ## > cacheSolve(cacheMatrix_A)
 ## # first iteration:
-## # will calculate and spit out solve result
-## (...long answer...)
+## <will calculate and spit out solve result>
 ## > cacheSolve(cacheMatrix_A) # call it again
 ## #second iteration
-## getting cached data # message because answer is cached
-## (...long answer...)
+## getting cached data
+## <spits out solve result cached in cacheMatrix_A>
 ## This reduces solve time by trading computational time for memory.
 
 ## Write a short comment describing this function
