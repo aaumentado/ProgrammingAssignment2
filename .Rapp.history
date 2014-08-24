@@ -1,0 +1,256 @@
+airquality[good,][1:10,2]
+airquality[good,][1:10,]
+airquality[good,][1:10,2,drop=F]
+exit
+exit()
+quit()
+x <- list(foo = 1:4, bar = 0.6)
+x[1]
+x[[1]]
+x$foo
+x$bar
+x[[2]]
+x[2]
+x["bar"]
+$bar
+x <- [a = 1:10, tank = 7:9, hello = "what"]
+x <- list(a = 1:10, tank = 7:9, hello = "what")
+x[c(1,3)]
+name <- x[1]
+name
+name <- "hello"
+name
+x[[name]]
+x$hello
+x$name
+x[["hello"]]
+x["hello"]
+x <- list(a = list(10,12,14), b = c(3.14, 2.81))
+x
+x[[c(1,3)]]
+x[c(1,3)]
+x < list(aardvark = 1:5)
+x <- list(aardvark = 1:5)
+x$a
+x[["a"]
+}
+x[["a"]]
+x[["a", exact = F]]
+lapply
+x <- list(a = 1:5, b = rnorm(10))
+lapply(x, mean)
+x
+x <- 1:5
+x
+lapply(x,mean)
+x <- 1:4
+lapply(x, runif)
+x <- c(1,2,10,3)
+lapply(x, runif)
+y <- lapply(x, runif)
+y
+y$1
+y[[1]]
+runif()
+$runif
+help runif
+help(runif)
+x <- list(a = matrix(1:4,2,2), b = matric(1:6,3,2))
+x <- list(a = matrix(1:4,2,2), b = matrix(1:6,3,2))
+x
+lapply(x, function(elt) elt[,1])
+y <- lapply(x, function(elt) elt[,1])
+y
+y$a
+sapply(x, mean)
+y <- sapply(x, mean)
+class(y)
+y
+y[a]
+y[1]
+mean(x)
+str(apply)
+help array
+help(array)
+x <- matrix(rnorm(200), 20, 10)
+x
+apply(x,2,mean)
+apply(x,1,sum)
+apply(x,1,mean)
+apply(x,3,mean)
+rowsums(x)
+rowSums(x)
+apply(x,1, quantile, probs = c(0.25, 0.75))
+apply(x,2, quantile, probs = c(0.25, 0.75))
+array(rnorm(2*2*10), c(2,2,10))
+y <- array(rnorm(2*2*10), c(2,2,10))
+y
+apply(a, c(1,2), mean)
+apply(y, c(1,2), mean)
+apply(y, c(1), mean)
+apply(y, c(2), mean)
+apply(y, c(1,22), mean)
+apply(y, c(1,2), mean)
+rowSums(y, dims = 2)
+rowSums(y, dims = 1)
+help$rowSums
+?rowSums
+?array
+x <- c(rnorm(10), runif(10, rnorm(10,1)))
+x <- c(rnorm(10), runif(10), rnorm(10,1)))
+x <- c(rnorm(10), runif(10), rnorm(10,1))
+f <- gl(3, 10)
+f
+tapply(x, f, mean)
+tapply(x, f, mean, simplify = FALSE)
+z <- tapply(x, f, mean)
+z
+z <- tapply(x, f, mean, simplify = F)
+z
+z[[1]]
+x <- c(rnorm(10), runif(10), rnorm(10,1))
+f
+split(x, f)
+x
+lapply(split(x,f), mean)
+head(airquality)
+?head
+s <- split(airquality, airquality$Month)
+levels(airquality$Month)
+?levels
+s
+lapply(s, function(x) colMeans(x[,c("Ozone", "Solar.R", "Wind")]))
+sapply(s, function(x) colMeans(x[,c("Ozone", "Solar.R", "Wind")]), na.rm =T)
+sapply(s, function(x) colMeans(x[,c("Ozone", "Solar.R", "Wind")], na.rm =T)
+)
+?tapply
+x <- rnorm(10)
+f1 <- gl(2,5)
+f2 <- gl(5,2)
+f1
+f2
+interaction(f1,f2)
+str(split(x, list(f1,f2)))
+y <- interaction(f1,f2)
+class(y)
+str(split(x, list(f1,f2)), drop = T)
+str(split(x, list(f1,f2), drop = T)
+str(split(x, list(f1,f2), drop = T))
+x
+x <- c(rnorm(10), runif(10), rnorm(10,1))
+x
+list(rep(1,4), rep(2, 3), rep(3, 2), rep(4,1))
+mapply(rep, 1:4, 4:1)
+mapply(rep, c(1,2,3), c(3,2,1))
+noise <- function(n, mean, sd) {#
++ rnorm(n, mean, sd) +}
+noise <- function(n, mean, sd) {#
++ rnorm(n, mean, sd) }
+noise <- function(n, mean, sd) {#
++ rnorm(n, mean, sd) + }
+noise <- function(n, mean, sd) {#
++ rnorm(n, mean, sd) }
+noise <- function(n, mean, sd) {#
++ rnorm(n, mean, sd) }
+noise <- function(n, mean, sd) {#
+rnorm(n, mean, sd) }
+noise(1,2,3)
+noise(5,2,3)
+mapply(noise, 1:5, 1:5, 2)
+y <- mapply(noise, 1:5, 1:5, 2)
+y
+class(y)
+log(-1)
+printmessage <- function(x) {
+if(x > 0)
+print("x is greater than zero")
+else
+print("x is less than or equal to zero")
+invisible(x)
+}
+printmessage(2)
+printmessage(0)
+printmessage(-1)
+print("x is less than or equal to zero")
+printmessage(NA)
+printmessage2 <- function(x) {
+if(is.na(x))
+print("x is a missing value")
+else if(x > 0)
+print("x is greater than zero")
+else
+print("x is less than or equal to zero")
+invisible(x)
+}
+printmessage2(x)
+printmessage2(log(-1))
+printmessage2(NA)
+?str
+?split
+?apply
+?tapply
+rm(x)
+mean(X)
+mean(x)
+tracebook()
+traceback()
+traceback(mean)
+?traceback
+mean(x)
+traceback()
+lm(y ~ x)
+rm(y)
+lm(y ~ x)
+traceback()
+?~
+1
+debug(lm)
+lm(y ~ x)
+debug(lm)
+lm(y ~ x)
+n
+rm()
+dir()
+?dir
+getwd
+getwd()
+?rm
+ls9)
+ls()
+options(error = recover)
+read.csv("nosuchfile")
+?file
+read.csv("nosuchfile")
+n
+x <- rnorm(10)
+x
+lapply(x, mean)
+sapply(x)
+y <- sapply(x, mean)
+y
+x <- list(a = rnorm(10), b = runif(10))
+x
+lapply(x, mean)
+sapply(x, mean)
+library(datasets)
+getwd()
+setwd("/Users/albertaumentado/Documents/Coursera/Data Science/R Programming")
+dir()
+set("ProgrammingAssignment2)
+setwd("ProgrammingAssignment2")
+source("cachematrix.R")
+makeCacheMatrix
+source("cachematrix.R")
+makeCacheMatrix
+cacheSolve
+x <- matrix(runif(1E6), nrow = 1000, ncol = 1000)
+y < makeCacheMatrix(x)
+y <- makeCacheMatrix(x)
+cacheSolve(y)
+cacheSolve(y)
+head(cacheSolve(y))
+z <- cacheSolve(y)
+z == solve(x)
+truth_table <- z == solve(x)
+truth_table <- if(z == solve(x)) 1
+truth_table <- if(z == solve(x)) {1}
